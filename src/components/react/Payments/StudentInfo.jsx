@@ -1,16 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import AkashBooksForm from './AkashBooksForm';
+import '../../Css/StudentInfo.css';
 
 const StudentInfo = () => {
   return (
     <Router>
-      <div className="container mt-4">
+      <div className="container mt-2">
         <div><h2>Student Information</h2></div>
         <div className="mb-4">Get All Student Details Regarding Fee Payment, Transport, Pocket Money, Other Fee Heads</div>
 
         <div className="mb-4">
-          <ul className="nav d-flex flex-nowrap">
+          <ul className="nav d-flex flex-nowrap border-bottom pb-1">
             <li className="nav-item">
               <NavLink
                 to="/payments"
